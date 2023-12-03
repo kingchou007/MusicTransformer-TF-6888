@@ -3,4 +3,4 @@ dataset/scripts
 dataset
 logs
 __pycache__
-midi_processor
+.DS_Store
