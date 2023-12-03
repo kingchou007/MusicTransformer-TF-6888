@@ -2,7 +2,8 @@ from model import MusicTransformerDecoder
 from custom.layers import *
 from custom import callback
 import params as par
-from tensorflow.python.keras.optimizer_v2.adam import Adam
+# from tensorflow.keras.optimizer.adam import Adam
+from tensorflow.keras.optimizers import Adam
 from data import Data
 import utils
 import argparse
@@ -14,14 +15,14 @@ tf.executing_eagerly()
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--l_r', default=None, help='학습률', type=float)
-parser.add_argument('--batch_size', default=2, help='batch size', type=int)
+parser.add_argument('--batch_size', default=300, help='batch size', type=int)
 parser.add_argument('--pickle_dir', default='model/processed', help='데이터셋 경로')
 parser.add_argument('--max_seq', default=2048, help='최대 길이', type=int)
 parser.add_argument('--epochs', default=2, help='에폭 수', type=int)
 parser.add_argument('--load_path', default=None, help='모델 로드 경로', type=str)
-parser.add_argument('--save_path', default="result/dec0722", help='모델 저장 경로')
+parser.add_argument('--save_path', default="result", help='모델 저장 경로')
 parser.add_argument('--is_reuse', default=False)
-parser.add_argument('--multi_gpu', default=False)
+parser.add_argument('--multi_gpu', default=True)
 parser.add_argument('--num_layers', default=6, type=int)
 
 args = parser.parse_args()

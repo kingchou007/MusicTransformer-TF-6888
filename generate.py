@@ -13,7 +13,7 @@ from midi_processor.processor import decode_midi, encode_midi
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--max_seq', default=2048, help='최대 길이', type=int)
-parser.add_argument('--load_path', default="result/t1", help='모델 로드 경로', type=str)
+parser.add_argument('--load_path', default="result", help='모델 로드 경로', type=str)
 parser.add_argument('--mode', default='dec')
 parser.add_argument('--beam', default=None, type=int)
 parser.add_argument('--length', default=2048, type=int)
@@ -50,8 +50,8 @@ else:
     print(">> generate with decoder wise... beam size is {}".format(beam))
     mt = MusicTransformerDecoder(loader_path=load_path)
 
-inputs = encode_midi('dataset/midi/BENABD10.mid')
-
+music_name = "mz_311_1.mid"
+inputs = encode_midi('dataset/midi/'+music_name)
 
 with gen_summary_writer.as_default():
     result = mt.generate(inputs[:10], beam=beam, length=length, tf_board=True)
