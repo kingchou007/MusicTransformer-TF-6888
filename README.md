@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
 # Music Generation - RNN/LSTM/Transformer - SYSEN6888
 
 How to Run the code
