@@ -1,6 +1,9 @@
-# MusicTransformer - SYSEN 6888
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()]
+# Music Generation - RNN/LSTM/Transformer - SYSEN6888
 
 How to Run the code
+
+plase follow the music-gen.ipynb
 
 ```bash
 git clone https://github.com/kingchou007/MusicTransformer-TF-6888.git
