@@ -22,6 +22,8 @@ def preprocess_midi(path):
 #     return event_seq.to_array(), control_seq.to_compressed_array()
 
 
+
+
 def preprocess_midi_files_under(midi_root, save_dir):
     midi_paths = list(utils.find_files_by_extensions(midi_root, ['.mid', '.midi']))
     os.makedirs(save_dir, exist_ok=True)
