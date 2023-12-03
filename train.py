@@ -22,7 +22,7 @@ parser.add_argument('--epochs', default=2, help='에폭 수', type=int)
 parser.add_argument('--load_path', default=None, help='모델 로드 경로', type=str)
 parser.add_argument('--save_path', default="result", help='모델 저장 경로')
 parser.add_argument('--is_reuse', default=False)
-parser.add_argument('--multi_gpu', default=True)
+parser.add_argument('--multi_gpu', default=False)
 parser.add_argument('--num_layers', default=6, type=int)
 
 args = parser.parse_args()
