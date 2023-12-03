@@ -29,3 +29,6 @@ python train.py --epochs={NUM_EPOCHS} --load_path={NONE_OR_LOADING_DIR} --save_p
 ```bash
 python generate.py --load_path={CKPT_CONFIG_PATH} --length={GENERATE_SEQ_LENGTH} --beam={NONE_OR_BEAM_SIZE}
 ```
+
+## Reference
+https://github.com/jason9693/MusicTransformer-tensorflow2.0/tree/master
