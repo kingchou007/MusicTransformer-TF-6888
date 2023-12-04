@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nQcCkGsn06FTh4nVdVIN3uW5ktFBfqE-?usp=sharing)
 # Music Generation - SYSEN6888
 
 RNN, LSTM, Transformer
